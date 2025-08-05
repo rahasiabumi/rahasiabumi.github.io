@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi Cinta dengan Kata dan Musik</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fce4ec;
+    }
+    .heart {
+      width: 140px;
+      height: 140px;
+      background: red;
+      position: relative;
+      transform: rotate(-45deg);
+      animation: heartbeat 1s infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart:before {
+      top: -70px;
+      left: 0;
+    }
+    .heart:after {
+      left: 70px;
+      top: 0;
+    }
+    .word {
+      position: absolute;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      width: 100px;
+      left: 20px;
+      top: 45px;
+      user-select: none;
+      pointer-events: none;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 10px #d41313;
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1) rotate(-45deg);}
+      20% { transform: scale(1.2) rotate(-45deg);}
+      40% { transform: scale(1) rotate(-45deg);}
+      60% { transform: scale(1.2) rotate(-45deg);}
+      80% { transform: scale(1) rotate(-45deg);}
+      100% { transform: scale(1) rotate(-45deg);}
+    }
+    .music-control {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">
+    <div class="word"></div>
+  </div>
+  <div class="music-control">
+    <audio controls autoplay loop>
+      <source src="ssstik.io_1754314161057.mp3" type="audio/mp3">
+      Musik tidak didukung di browser Anda.
+    </audio>
+    <p> <a href= target="_blank">
+        <h1>maaf yawwwwwwwwwwwwwwww &#x1F64F; &#x1F63A;</h1>
+    </a></p>
+  </div>
+</body>
+</html>
